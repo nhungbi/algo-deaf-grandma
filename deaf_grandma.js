@@ -1,22 +1,23 @@
 function deafGrandma() {
     let count_bye = 0;
-    console.log('HEY, KID!')
+    alert('HEY, KID!')
 
     while (count_bye < 2) {
         let kid_rep = window.prompt('Input a reply to grandma.')
         if (kid_rep == "") {
-            console.log('WHAT?!')
+            alert('WHAT?!')
         } else if (kid_rep == 'GOODBYE!') {
             count_bye += 1
             if (count_bye === 2) {
-                console.log('LATER, SKATER!')
+                alert('LATER, SKATER!')
+                return
             } else {
-                console.log('LEAVING SO SOON?')
+                alert('LEAVING SO SOON?')
             }
         } else if (kid_rep === kid_rep.toUpperCase()) {
-            console.log('NO, NOT SINCE 1946!')
+            alert('NO, NOT SINCE 1946!')
         } else if (kid_rep === kid_rep.toLowerCase()) {
-            console.log('SPEAK UP KID!')
+            alert('SPEAK UP KID!')
         }
     }
 
